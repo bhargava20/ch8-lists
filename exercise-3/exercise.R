@@ -2,10 +2,11 @@
 
 # Create a *list* of 10 random numbers. Use the `runif` function to make a vector of random numbers,
 # then use `as.list()` to convert that to a list.
-
+rand <- runif(10, 0, 100)
+random.numbers <- as.list(rand)
 
 # Use `lapply()` to apply the `round()` function to each number, rounding it to the nearest .1
-
+lapply(random.numbers, round, 1)
 
 
 ## Bonus

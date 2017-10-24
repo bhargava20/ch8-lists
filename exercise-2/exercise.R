@@ -3,17 +3,17 @@
 ## 1. Create a sequence of numbers from 40 to 50.  Store this into a vector.
 ## Write a loop that prints the numbers in a nice way, for instance like
 ##  "element 1 = 40".
-
+seq1 <-  40:50
 
 ## 2. Create another sequence of numbers and store in a vector.
 ## Write a loop that prints the numbers and their squares in a nice way.
-
+seq2 <- 50:60
 
 ## 3. Store the file names in the current working directory into a vector.
 ## You can get the names by 'list.file()` command (see help for additional information).
 ## Use loop to create a vector of file name lengths.
 ## After you have created the vector print the results in the following way:
-##
+## 
 ## file1  length1
 ## file2  length2
 ## ...
@@ -24,6 +24,11 @@
 ## x[3] <- 7
 ## Note: you have to create a vector before you can start assigning values to it.
 ##
+  names <- list.files()
+  lengths <- NULL
+  for(i in names) {
+    lengths <- c(lengths, nchar(i))
+  }
 
 
 ## 4. Create a sequence of numbers from 1 to 1000.
@@ -31,6 +36,7 @@
 ## Hint: you may want to test if remainder is 0
 ## Hint: '%%' is the remainder operator
 
+  
 
 ## 5. Create a vector of 3 words.  Split the words in this vector into individual characters.
 ## Hint: use 'strsplit()' function.
